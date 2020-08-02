@@ -1,0 +1,134 @@
+Layer path -
+var ref = require('/opt/nodejs/fileName.ext');
+
+sudo apt-get install -y nodejs
+sudo apt-get install npm
+
+//To update NPM
+npm install -g npm
+
+Angular -
+1. npm install -g @angular/cli
+
+2. ng -v
+
+3. ng new appName
+
+4. ng serve --open
+
+5. ng g c componentFolder/componentName (creates - html, css, ts and test files)
+
+6. ng g s serviceName
+
+------------------------------------------------------------------------------------------
+
+angular.json -> can be used for global css and js files
+
+app/index.html/app.module.ts -> entry point to angular App
+new componets need to be added here, 
+cli automatically adds modules are added under imports array
+
+@NgModule({
+  declarations: [
+    //Components declared here
+    //Angular CLI automatically adds generated components here
+  ],
+  imports: [
+    //Angular Modules/Libs go here
+  ],
+  providers: [],
+  bootstrap: [AppComponent//Main App component]
+})
+
+@Component has
+1. selector - for custom html tag
+2. templateUrl - for specifying which html content is to be loaded for the coponent
+3. styleUrls - for specifying css file for the particular component
+4. class - variables under this class, can be used under {{}} in the html
+
+class SomeComponent implements OnInit {
+
+	//Used to import services
+	constructor(){
+	
+	}
+
+	functionName(name: String):void {
+		this.name = name;
+	}
+}
+
+------------------------------------------------------------------------------------------
+
+React 
+
+npm i npx -g
+
+npx create-react-app appName
+
+npm i react-router-dom
+
+npm i axios
+
+npm start
+
+public/index.html -> Main HTML of SPA
+
+src/index.js -> Main JS file
+
+render() -> Mandatory lifecycle method,
+It returns JSX
+Use className instead of class
+
+Components to be created under src/components folder
+File naming convention is Pascalcase
+How to use -> <ComponentName/>
+
+Data is passed to Components via props
+eg. <ComponentName todo={this.state.toShow}/>
+
+Good practice to mention PropTypes below the class for the Component
+ClassName.propTypes = {}
+
+------------------------------------------------------------------------------------------
+npm install -g @vue/cli
+vue --version
+npm install -g @vue/cli-service-global
+vue create serverless-vue
+vue add router
+npm run serve
+npm run build
+
+//SPA main file
+public > index.html 
+
+// Entry point
+src > main.js
+
+// Main Component
+src > App.vue
+contains global styling 
+
+// Routing
+src > router.js
+
+===================
+
+IP Cal -
+11111111.11111111.11111111.11111111
+0-255     0-255      0-255   0-255
+
+11111111 -> (right to left)
+2^0 - 1
+2^1 - 2
+2^2 - 4
+2^3 - 8
+2^4 - 16
+2^5 - 32
+2^6 - 64
+2^7 - 128
+1 + 2+ 4 + 8 + 16 + 32 + 64 + 128 = 255
+
+so if we need to calculate 
+11000000
+= 192

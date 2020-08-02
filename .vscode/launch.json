@@ -1,0 +1,342 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "dynamodbScanAndUpdate.js",
+            "program": "${workspaceFolder}/snippets/dynamodbScanAndUpdate.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "imageThumbnail",
+            "program": "${workspaceFolder}/snippets/imageThumbnail.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "S3",
+            "program": "${workspaceFolder}/snippets/s3.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "authentication",
+            "program": "${workspaceFolder}/authentication-app/server.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "apiExample",
+            "program": "${workspaceFolder}/snippets/apiExample.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "app.js",
+            "program": "${workspaceFolder}/snippets/app.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "assert.js",
+            "program": "${workspaceFolder}/snippets/assert.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "asyncEach.js",
+            "program": "${workspaceFolder}/snippets/asyncEach.js"
+        },{
+            "type": "node",
+            "request": "launch",
+            "name": "asyncForEach.js",
+            "program": "${workspaceFolder}/snippets/asyncForEach.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "asyncParallel.js",
+            "program": "${workspaceFolder}/snippets/asyncParallel.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "asyncQueue.js",
+            "program": "${workspaceFolder}/snippets/asyncQueue.js"
+        },{
+            "type": "node",
+            "request": "launch",
+            "name": "asyncSeries.js",
+            "program": "${workspaceFolder}/snippets/asyncSeries.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "asyncTimes.js",
+            "program": "${workspaceFolder}/snippets/asyncTimes.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "asyncWaterfall.js",
+            "program": "${workspaceFolder}/snippets/asyncWaterfall.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "aws-xray.js",
+            "program": "${workspaceFolder}/snippets/aws-xray.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "aws-xray-2.js",
+            "program": "${workspaceFolder}/snippets/aws-xray-2.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "bcrypt.js",
+            "program": "${workspaceFolder}/snippets/bcrypt.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "compression.js",
+            "program": "${workspaceFolder}/snippets/compression.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "connect-flash.js",
+            "program": "${workspaceFolder}/snippets/connect-flash.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "cron.js",
+            "program": "${workspaceFolder}/snippets/cron.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "csvtojson.js",
+            "program": "${workspaceFolder}/snippets/csvtojson.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "eventEmitter.js",
+            "program": "${workspaceFolder}/snippets/eventEmitter.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "express-jwt.js",
+            "program": "${workspaceFolder}/snippets/express-jwt.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "express-validator.js",
+            "program": "${workspaceFolder}/snippets/express-validator.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "fs.js",
+            "program": "${workspaceFolder}/snippets/fs.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "html-pdf.js",
+            "program": "${workspaceFolder}/snippets/html-pdf.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "json-2-csv.js",
+            "program": "${workspaceFolder}/snippets/json-2-csv.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "lodash.js",
+            "program": "${workspaceFolder}/snippets/lodash.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "multer.js",
+            "program": "${workspaceFolder}/snippets/multer.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "mysqlConnection.js",
+            "program": "${workspaceFolder}/snippets/mysqlConnection.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "mysqlQuery.js",
+            "program": "${workspaceFolder}/snippets/mysqlQuery.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "node-schedule.js",
+            "program": "${workspaceFolder}/snippets/node-schedule.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "path.js",
+            "program": "${workspaceFolder}/snippets/path.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "promise.js",
+            "program": "${workspaceFolder}/snippets/promise.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "replaceall.js",
+            "program": "${workspaceFolder}/snippets/replaceall.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "request.js",
+            "program": "${workspaceFolder}/snippets/request.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "url.js",
+            "program": "${workspaceFolder}/snippets/url.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "winston.js",
+            "program": "${workspaceFolder}/snippets/winston.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "xlsx.js",
+            "program": "${workspaceFolder}/snippets/xlsx.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "xray-http.js",
+            "program": "${workspaceFolder}/snippets/xray-http.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "scratchpadjs",
+            "program": "${workspaceFolder}/app.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "asyncEach.js",
+            "program": "${workspaceFolder}/snippets/asyncEach.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "mysqlPool.js",
+            "program": "${workspaceFolder}/snippets/mysqlPool.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "axiosFormData.js",
+            "program": "${workspaceFolder}/snippets/axiosFormData.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "cloudwatch.js",
+            "program": "${workspaceFolder}/snippets/cloudwatch.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "jsonwebtoken.js",
+            "program": "${workspaceFolder}/snippets/jsonwebtoken.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "jwt.js",
+            "program": "${workspaceFolder}/snippets/jwt.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "lambdaInvoke.js",
+            "program": "${workspaceFolder}/snippets/lambdaInvoke.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "dynamo.js",
+            "program": "${workspaceFolder}/snippets/dynamo.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "util.js",
+            "program": "${workspaceFolder}/snippets/utilPromisify.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "mysqlpromisify.js",
+            "program": "${workspaceFolder}/snippets/mysqlpromisify.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "kms.js",
+            "program": "${workspaceFolder}/snippets/kms.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "kmsJwt.js",
+            "program": "${workspaceFolder}/snippets/kmsJwt.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "parameterStore.js",
+            "program": "${workspaceFolder}/snippets/parameterStore.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "sso test",
+            "program": "${workspaceFolder}/snippets/parameterStoreJwt.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "postgres",
+            "program": "${workspaceFolder}/snippets/postgres.js"
+        }
+    ]
+}
