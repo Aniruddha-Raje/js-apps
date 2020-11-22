@@ -7,6 +7,10 @@ console.log(
 );
 
 console.log(
+  typeof(parse("2020-12-20T11:12:58Z", "yyyy-MM-dd'T'HH:mm:ssX", new Date()))
+);
+
+console.log(
   add(new Date(), {
     months: 1,
     days: -3
