@@ -82,3 +82,5 @@ typings/
 
 *.jpg
 package-lock.json
+
+Archive.js

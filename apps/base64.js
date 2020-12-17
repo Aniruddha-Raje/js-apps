@@ -1,5 +1,5 @@
 //String to Hash
-let data = 'test';  
+let data = 'ams-dKa1xM:55xXKUqofYGRKbnr8vxT4qBvpcdXvteE';  
 
 //Encoding
 let buff = Buffer.from(data);  
