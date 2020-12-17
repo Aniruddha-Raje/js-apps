@@ -34,5 +34,5 @@ let verifyOptions = {
     maxAge: 300
 };
 
-var legit = jwt.verify('eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWJUeXBlIjoidXNlciIsInN1YlJvbGUiOlsidXNlciIsImFkbWluIl0sImlhdCI6MTU3MDY5MTgzMCwiZXhwIjoxNTcwNjk5MDMwLCJhdWQiOiJ0ZXN0IiwiaXNzIjoidGVzdCIsInN1YiI6InRlc3QifQ.kLtoLAmityhkyDTeG5cfvUYTuI9QkIeHLC0hrDVv2Pm5442RgLJsRhHriB6ql-2k0vClwlf3-x8RenuhcU55I6EcdovCsct-gVQzYGdAs9Irfgc0wVHBVwpRbUJJ74SDYuf4bc5-KI5jQ2utHE_QCVQcBfl1BawmvwhwGO2wGvo', publicKEY, verifyOptions);
+var legit = jwt.verify('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c', publicKEY, verifyOptions);
 console.log("\nJWT verification result: " + JSON.stringify(legit));

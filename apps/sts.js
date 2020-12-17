@@ -6,7 +6,7 @@ let getStsTokens = async() => {
     let sts = new AWS.STS();
 
     const params = {
-        'RoleArn': 'arn:aws:iam::112072006431:role/cs-dev',
+        'RoleArn': '',
         'RoleSessionName': 'testing-to-assume-dev-role'
     };
 
