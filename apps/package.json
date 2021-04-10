@@ -49,6 +49,7 @@
     "node-thumbnail": "^0.15.0",
     "npm-upgrade": "^2.0.0",
     "pg": "^7.11.0",
+    "ramda": "^0.27.1",
     "replaceall": "^0.1.6",
     "request": "^2.88.0",
     "sequelize": "^5.21.6",

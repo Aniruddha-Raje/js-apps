@@ -23,18 +23,21 @@ FULL OUTER JOIN table2
 ON table1.column_name = table2.column_name
 WHERE condition;
 
+id emp_id   name  tech_stack  skill
+1    1	    john  backend     java
+2    2	    jane  frontend    react
+3    1	    john  backend     nodejs
+4    2	    jane  backend     python
 
--- 1	john    backend     java
--- 2	jane	frontend    react
--- 1	john	backend     nodejs
-
--- Employee_id 1 john is a backend engineer skilled in java,nodejs
+Employee 1 john is a backend engineer skilled in java | nodejs
+Employee 2 jane is a frontend+backend engineer skilled in react | python
 
 
 WHERE
 HAVING
 LIMIT
 JOIN
+FROM
 ORDER BY
 SELECT
 OFF SET
@@ -52,3 +55,5 @@ GROUP BY
 -- COMMIT, and ROLLBACK statements cannot be performed to retrieve the lost data.
 
 -- ‘DROP’ command is used to drop the table or key like the primary key/foreign key.
+
+Design a database for a use case, where 
