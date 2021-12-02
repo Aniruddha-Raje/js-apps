@@ -45,3 +45,8 @@ console.log("yyyy only => ", moment('2019-09-10').format('YYYY'));
 console.log(moment().format('YYYY/MM/DD'));
 
 console.log("validation => ", moment("21 Apr 0000", 'DD MMM YYYY').isValid());
+
+console.log("Transaction ", moment("2021-03-15 00:00:00").unix());
+console.log("Start ", moment("2021-04-25 00:00:00").unix());
+console.log("End ", moment("2021-05-24 00:00:00").unix());
+console.log("Next ", moment("2021-05-15 23:00:00").unix());

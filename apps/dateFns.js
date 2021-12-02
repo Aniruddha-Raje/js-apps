@@ -5,6 +5,14 @@ var format = require("date-fns/format");
 var getTime = require('date-fns/getTime');
 var getMonth = require('date-fns/getMonth')
 
+console.log(format(new Date(), "MMMM"));
+
+console.log(format(parse("18/02/2021", "dd/MM/yyyy", new Date()), "MMMM"));
+
+console.log(
+  new Date()
+);
+
 console.log(
   parse("2020-12-16", "yyyy-MM-dd", new Date())
 );
@@ -34,8 +42,6 @@ console.log(format(sub(parse("18/02/2021", "dd/MM/yyyy", new Date()), {
 
 parse("18/02/2021", "dd/MM/yyyy", new Date())
 
-console.log(format(new Date(), "MMMM"));
-
 console.log(
   format(
       add(parse("2021-02-01", "yyyy-MM-dd", new Date()), {
@@ -48,4 +54,4 @@ console.log(
 
 let failSMSMessage = "bolttech: Your bolttech Mobile Protec plan has been cancelled. Your phone is no longer protected after #NEXTDUEDATE.";
 
-failSMSMessage = failSMSMessage.replace("#NEXTDUEDATE", await format(await parse(subscription.endDate, "yyyy-MM-dd", new Date()), "dd/MM/yyyy"));
+// failSMSMessage = failSMSMessage.replace("#NEXTDUEDATE", await format(await parse(subscription.endDate, "yyyy-MM-dd", new Date()), "dd/MM/yyyy"));
