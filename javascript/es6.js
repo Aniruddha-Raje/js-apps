@@ -1,3 +1,16 @@
+// Let and const keywords.
+// Default Parameters. function multiply(a, b = 1) {} 
+// Arrow functions.
+// Template Literals => ` ${variableHere} `.
+// Object Literals => an object literal is a comma-separated list of name-value pairs inside of curly braces
+// Rest and spread operators.
+// Destructuring assignment.
+// Modules, Classes, Generators, and iterators.
+// Promises, and many more.
+
+// The call() method takes arguments separately.
+// The apply() method takes arguments as an array.
+
 // ==========  JavaScript let ========== 
 var x = 10;
 {

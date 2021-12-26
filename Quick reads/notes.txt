@@ -1,0 +1,35 @@
+Event loop checks for Stack and Task queue
+Only when Stack is empty, Event loop will pick the callback from the Task queue
+
+REPL stands for Read Evaluate Print Loop
+
+- Middleware is a function receives the Request and Response objects. 
+- The next function of middleware is represented with the help of a variable, usually named next. 
+- Execute any type of code
+- Update or modify the request and the response objects
+- Finish the request-response cycle
+- Invoke the next middleware in the stack
+
+setInterval (more accurate) vs setTimeout(waits and adds up to 1000ms)
+
+REBASE
+git chekout feature 
+git rebase master
+(resolve conflicts here)
+get chekout master
+git rebase feature
+git push master
+
+
+Exit codes are a set of specific codes which are used for finishing a specific process -
+- Uncaught fatal exception
+- Unused
+- Fatal Error
+- Internal Exception handler Run-time failure
+- Internal JavaScript Evaluation Failure
+
+
+setTimeout/clearTimeout – Used to schedule code execution after a designated amount of milliseconds
+setInterval/clearInterval – Used to execute a block of code multiple times
+setImmediate/clearImmediate – Used to execute code at the end of the current event loop cycle
+process.nextTick – Used to schedule a callback function that needs to be invoked in the next iteration of the Event Loop
