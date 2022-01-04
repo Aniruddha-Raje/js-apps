@@ -10,14 +10,13 @@ let mergeTwoLists = async () => {
     
     for(let i = 0; i < len; i++){
         if(list1[i] != undefined && list2[i] != undefined){
-            if(list1[i]){
+            if(list1[i] < list2[i]){
                 mergedArr.push(list1[i]);
                 mergedArr.push(list2[i]);
             }
             else{
                 mergedArr.push(list2[i]);
                 mergedArr.push(list1[i]);
-                
             }
         }
         else if(list1[i] != undefined){
