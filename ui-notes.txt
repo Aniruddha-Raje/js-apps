@@ -132,7 +132,26 @@ and every time you change the value of that variable you are mutating that state
 - Hooks can only be called at the top level of a component.
 - Hooks cannot be conditional
 
+useState Hook allows us to track state in a function component
+useState accepts an initial state and returns two values:
+- The current state.
+- A function that updates the state.
+function FavoriteColor() {
+  const [color, setColor] = useState("red");
 
+  return (
+    <>
+      <h1>My favorite color is {color}!</h1>
+      <button
+        type="button"
+        onClick={() => setColor("blue")}
+      >Blue</button>
+    </>
+  )
+}
+
+Props -
+children prop - A property that lets you nest components in other components  
 Changes inside component and child components are possible with props but not with state
 
 React Props are read-only! You will get an error if you try to change their value.
@@ -153,6 +172,8 @@ The main purpose is to combine the different browsers on the API so that the eve
 Refs stands for References to React. 
 It helps in storing a reference to a particular react element or component that can be returned by the component render configuration function.
 
+to optimze performance for a function component that always renders the same way - 
+Wrap it in the React.memo higher-order component.
 HOC is the Higher-Order Component. It is an advanced way of reusing the component logic, which wraps another component along with it.
 several benefits of HOC, which include the following:
 
