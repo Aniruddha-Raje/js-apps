@@ -1,11 +1,13 @@
 // Let and const keywords.
 // Default Parameters. function multiply(a, b = 1) {} 
-// Arrow functions.
+// Arrow functions - write shorter function syntax.
 // Template Literals => ` ${variableHere} `.
 // Object Literals => an object literal is a comma-separated list of name-value pairs inside of curly braces
-// Rest and spread operators.
+// Rest and spread operators - allows us to quickly copy all or part of an existing array or object into another array or object
 // Destructuring assignment.
-// Modules, Classes, Generators, and iterators.
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const [one, two, ...rest] = numbers;
+// Modules, Classes, Generators, and iterators. - Modules rely on the import and export statements, classes allow inheritance using extends
 // Promises, and many more.
 
 // The call() method takes arguments separately.

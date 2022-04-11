@@ -1,3 +1,5 @@
+// .map() method allows you to run a function on each item in the array, returning a new array as the result
+
 var arr = [1,2,3,'four'];
 
 var devs = [
