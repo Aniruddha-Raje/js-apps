@@ -61,20 +61,26 @@ class SomeComponent implements OnInit {
 ------------------------------------------------------------------------------------------
 
 React 
+component-based approach and helps in building reusable UI components
+uses virtual DOM instead of the real DOM
+States are the source of data for React components. In other words, they are objects responsible for determining components behavior and rendering.
 
 npm i npx -g
 
 npx create-react-app appName
 
 npm i react-router-dom
-
 npm i axios
 
 npm start
 
-public/index.html -> Main HTML of SPA
+public/index.html -> div id="root, "ignore but, it's the Main HTML of SPA 
 
 src/index.js -> Main JS file
+src/App.js -> contains the root App component
+
+use className instead of class attribute
+use htmlFor instead of for attribute
 
 render() -> Mandatory lifecycle method,
 It returns JSX
@@ -132,3 +138,27 @@ IP Cal -
 so if we need to calculate 
 11000000
 = 192
+
+
+===================
+
+nextjs
+npx create-next-app app-name --use-npm
+npm run dev
+
+-pages
+-public
+-styles
+
+instead of a tag import next/Link
+<Link href="/">
+imported css is under styles/xxx.module.css
+<style jsx>
+  {`
+    .title {
+      color: red
+    }
+  `}
+</style>
+
+local profile a
