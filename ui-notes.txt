@@ -103,6 +103,9 @@ It takes state as an argument, and returns an object with changes to the state
 - render()
 - componentDidMount()
 The render() method is required and will always be called, the others are optional and will be called if you define them.
+-getDefaultProps()
+-getInitialState()
+-componentWillMount()
 
 Updating -
 A component is updated whenever there is a change in the component's state or props.
@@ -117,9 +120,13 @@ method you have access to the props and state before the update,
 meaning that even after the update, you can check what the values were before the update
 - componentDidUpdate() - componentDidUpdate method is called after the component is updated in the DOM
 The render() method is required and will always be called, the others are optional
+- componentWillReceiveProps()
+- componentWillUpdate()
+
 
 Unmounting -
 The componentWillUnmount method is called when the component is about to be removed from the DOM.
+
 
 React events are written in camelCase syntax - onClick instead of onclick
 
