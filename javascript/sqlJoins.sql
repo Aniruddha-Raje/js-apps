@@ -5,6 +5,9 @@ abcabcbb
 abc
 3
 
+dense rank,
+window function
+
 Input: 0, 2, 1, 2, 1, 0
 Output: 0, 0, 1, 1, 2, 2
 

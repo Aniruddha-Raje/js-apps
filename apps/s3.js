@@ -4,72 +4,77 @@ var util = require('util');
 
 let testGetObjectAndDownload = async () => {
    let s3Client = new AWS.S3({
-      region: "us-east-1"
+      region: "ap-southeast-1"
   });
 
   let params = {
-      Bucket: 'source-bucket', 
-      Key: 'folder/test.png'
+      Bucket: 'bucket-name'
   };
 
-  const s3Object = await s3Client.getObject(params).promise();
-  fs.writeFileSync('/Users/aniruddhanarendraraje/Documents/work/pocs/node-crud-app/snippets/aaaa.png', s3Object.Body, 'binary');
+//   const s3ListBuckets = await s3Client.listBuckets().promise();
+//   console.log("s3ListBuckets => ", s3ListBuckets);
+
+  const s3ListObjects = await s3Client.listObjects(params).promise();
+  console.log("s3ListBuckets => ", s3ListObjects);
+
+//   const s3Object = await s3Client.getObject(params).promise();
+//   fs.writeFileSync('/Users/aniruddhanarendraraje/Documents/work/pocs/node-crud-app/snippets/aaaa.png', s3Object.Body, 'binary');
 };
-//testGetObjectAndDownload();
+testGetObjectAndDownload();
 
-let uploadImages = async () => {
-   try {
-      let fileLocation = "/Users/aniruddhanarendraraje/Documents/work/pocs/node-crud-app/snippets/outside.jpg";
+// let uploadImages = async () => {
+//    try {
+//       let fileLocation = "/Users/xxx/Documents/work/pocs/node-crud-app/snippets/outside.jpg";
 
-      let fsReadFileSync = util.promisify(fs.readFileSync);
-      let fileContent = await fsReadFileSync(fileLocation);
+//       let fsReadFileSync = util.promisify(fs.readFileSync);
+//       let fileContent = await fsReadFileSync(fileLocation);
 
-      let params = {
-         Bucket: '',
-         Key: 'test/outside.jpg',
-         Body: fileContent,
-         ServerSideEncryption: "AES256"
-      };
-      console.log(params);
-      console.log(fileContent);
+//       let params = {
+//          Bucket: '',
+//          Key: 'test/outside.jpg',
+//          Body: fileContent,
+//          ServerSideEncryption: "AES256"
+//       };
+//       console.log(params);
+//       console.log(fileContent);
 
-      let s3Upload = util.promisify(s3.upload).bind(s3);
-      await s3Upload(params);
-      console.log('file uploaded');
+//       let s3Upload = util.promisify(s3.upload).bind(s3);
+//       await s3Upload(params);
+//       console.log('file uploaded');
 
-      return true;
-   } catch (error) {
-      console.error(error);
-      return false;
-   }
-}
+//       return true;
+//    } catch (error) {
+//       console.error(error);
+//       return false;
+//    }
+// }
 
-//uploadImages();
+// //uploadImages();
 
-let s3GetObjectTest = async () => {
-   try {
+// let s3GetObjectTest = async () => {
+//    try {
 
-      let bucketName = '';
-      let s3FilePath = '';
-      let fileName = s3FilePath.substring(s3FilePath.lastIndexOf('/')+1,s3FilePath.length);
-      let downloadFilePath = '/Users/aniruddhanarendraraje/Documents/work/projects/serverless/serverless-imageit/resources/'+fileName;
+//       let bucketName = '';
+//       let s3FilePath = '';
+//       let fileName = s3FilePath.substring(s3FilePath.lastIndexOf('/')+1,s3FilePath.length);
+//       let downloadFilePath = '/Users/aniruddhanarendraraje/Documents/work/projects/serverless/serverless-imageit/resources/'+fileName;
 
-      let client = new AWS.S3({
-         region: "us-east-1"
-      });
+//       let client = new AWS.S3({
+//          region: "us-east-1"
+//       });
 
-      var params = {
-         Bucket: bucketName, 
-         Key: s3FilePath
-      };
+//       var params = {
+//          Bucket: bucketName, 
+//          Key: s3FilePath
+//       };
 
-      var file = await fs.createWriteStream(downloadFilePath);
-      await client.getObject(params).createReadStream().pipe(file);
-   } catch (error) {
-      console.log(error);
-   }
+//       var file = await fs.createWriteStream(downloadFilePath);
+//       await client.getObject(params).createReadStream().pipe(file);
+//    } catch (error) {
+//       console.log(error);
+//    }
    
-};
+// };
 
 //s3GetObjectTest();
 // let test = async () => {

@@ -1,6 +1,11 @@
 var moment = require('moment-timezone');
+var momo = require('moment');
 
-console.log("Convert from Asia/Kuala_Lumpur to Unix -> ", moment.tz("2019-10-09 00:00:00","UTC").unix());
+var tsInSecs = moment().unix();
+console.log("moment().unix() ", tsInSecs);
+console.log("Epoch to UTC -> ",moment.unix(moment().unix()).tz("Asia/Singapore").format('DD-MM-YYY hh:mm:ss'));
+
+console.log("Convert from Asia/Kuala_Lumpur to Unix -> ", moment.tz("2023-02-08 14:10:00","UTC").unix());
 console.log("Convert from Asia/Kuala_Lumpur to Unix -> ", moment.tz("2019-10-09 23:59:59","UTC").unix());
 // Outputs - 1570595400
 

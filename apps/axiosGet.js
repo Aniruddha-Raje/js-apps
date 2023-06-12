@@ -22,21 +22,16 @@ let getTestUsingPromises = async () => {
 
 let getTest = async () => {
   try {
-    var headers = {
-      "Content-Type": "application/json",
-      "Bolt-Tenant-Id": "PHSAMSUOEMDG01",
-      "Bolt-Country-Code": "PH"
-    };
-
-    var url =
-      "https://api.staging.device.bolttech.asia/v1/device/info/353408111150619";
 
     let apiResponse = await axios({
       method: "GET",
-      url: url,
-      headers: headers
+      url: "https://jsonplaceholder.typicode.com/todos/1",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": ""
+      }
     });
-    console.log("apiResponse => ", apiResponse);
+
     console.log("apiResponse.data => ", apiResponse.data);
   } catch (error) {
     console.error(error);

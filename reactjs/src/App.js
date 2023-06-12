@@ -10,6 +10,7 @@ const App = () => {
   const [showAddTask, setShowAddTask] = useState(false)
   const [tasks, setTasks] = useState([])
 
+  //do something after render
   useEffect(() => {
     const getTasks = async () => {
       const tasksFromServer = await fetchTasks()
@@ -19,7 +20,7 @@ const App = () => {
     getTasks()
   }, [])
 
-  // Fetch Tasks
+  // Fetch Tasks - called once from useEffect after render
   const fetchTasks = async () => {
     const res = await fetch('http://localhost:3030/tasks')
     const data = await res.json()
@@ -37,6 +38,7 @@ const App = () => {
 
   // Add Task
   const addTask = async (task) => {
+    //updates the server with the new task object
     const res = await fetch('http://localhost:3030/tasks', {
       method: 'POST',
       headers: {
@@ -47,6 +49,7 @@ const App = () => {
 
     const data = await res.json()
 
+    //updates the state of tasks adding the new task
     setTasks([...tasks, data])
 
     // const id = Math.floor(Math.random() * 10000) + 1

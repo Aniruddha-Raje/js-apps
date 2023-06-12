@@ -1,5 +1,9 @@
 var moment = require('moment');
 
+var timestamp = moment().utc().valueOf();
+console.log("timestamp => ", timestamp);
+console.log(moment(timestamp).format('YYYY-MM-DD hh:mm:ss'));
+
 console.log(moment().format('YYYY-MM-DDThh:mm:ss.ms'));
 console.log("UTC => ",moment().toISOString());
 console.log("toISOString => ",moment().toISOString(true));
@@ -11,7 +15,7 @@ console.log("Date Time: 1 ", moment("2019-04-01T05:15:32Z").format('YYYY-MM-DD h
 var tsInSecs = moment().unix();
 console.log("moment().unix() ", tsInSecs);
 
-var timestamp = moment().utc().valueOf();
+
 console.log("TS in MS => ",timestamp);
 console.log("TS in Secs => ",moment(timestamp).unix());
 

@@ -13,6 +13,7 @@ REPL stands for Read Evaluate Print Loop
 setInterval (more accurate) vs setTimeout(waits and adds up to 1000ms)
 
 REBASE
+https://www.youtube.com/watch?v=f1wnYdLEpgI
 git chekout feature 
 git rebase master
 (resolve conflicts here)

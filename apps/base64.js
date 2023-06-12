@@ -1,5 +1,5 @@
 //String to Hash
-let data = 'ams-dKa1xM:55xXKUqofYGRKbnr8vxT4qBvpcdXvteE';  
+let data = 'Tempo Scan Tower, Kav. 3-4, Lalamove Lt.26,, Jl. HR Rasuna Said, Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12950, Indonesia';  
 
 //Encoding
 let buff = Buffer.from(data);  
